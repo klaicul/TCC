@@ -72,6 +72,13 @@ main {
     margin-bottom: 20px;
 }
 
+#lista-eletivas{
+    display: flex;
+    justify-content: space-around;
+    gap: -120px;
+    flex-direction: wrap;
+}
+
 #lista-eletivas h2 {
     color: #004080;
     font-size: 1.8em;
@@ -220,7 +227,10 @@ footer {
     #eletivas p {
         font-size: 3.2vw; /* Ajuste em telas médias */
     }
+
+
 }
+
 
 @media (max-width: 768px) {
     .texto-sobre-gradiente {
@@ -368,4 +378,92 @@ footer {
 
 #instagram:hover {
     color: rgb(241, 136, 50);
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    border-top: 5px solid #1e88e5;
+    margin: 20px auto;
+    
+}
+
+.card-header {
+    background-color: #ffd700;
+    height: 10px;
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: -10px;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0 5px;
+    font-size: 1.5em;
+}
+
+.card h4 {
+    margin: 0;
+    color: #6200ea;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.card p {
+    margin: 15px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.card button {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.card button:hover {
+    background-color: #1565c0;
+}
+
+@media (max-width: 1200px) {
+    #lista-eletivas {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    #lista-eletivas {
+        flex-direction: column;
+        align-items: center; /* Centers the cards */
+    }
+
+    .card {
+        width: 80%; /* Reduces the width of the card for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #lista-eletivas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Further reduces width for mobile screens */
+    }
 }
