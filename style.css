@@ -33,6 +33,7 @@ header .logo img {
     transition: 0.5s;
 }
 
+
 header .logo img:hover{
     scale: 1.8;
 }
@@ -310,6 +311,91 @@ a {
 .butao:hover{
     scale: 1.4;
 }
+
+/*O pau vai torar agora*/
+
+
+header {
+    background-color: #004080; /* Deep blue color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    border-bottom: 10px solid #FFCC00; /* Yellow bottom border */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .logo {
+    height: 60px; /* Adjust as needed */
+}
+
+.school-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Modern Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px 5px;
+    margin-left: auto;
+}
+
+.search-input {
+    border: none;
+    padding: 10px;
+    width: 200px;
+    outline: none;
+    font-size: 14px;
+    font-family: "Varela Round", sans-serif;
+    transition: width 0.4s ease;
+}
+
+.search-input:focus {
+    width: 300px; /* Expands when focused */
+}
+
+.search-btn {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+ }
+
+
+
+.search-btn i {
+    font-size: 16px;
+    color: #004080;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .search-bar {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .search-input {
+        width: 100px;
+    }
+
+    .search-input:focus {
+        width: 200px;
+    }
+}
+
 
 
 
