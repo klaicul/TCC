@@ -468,7 +468,12 @@ footer {
     }
 }
 
-
+.butao{
+    transition: 0.5s;
+}
+.butao:hover{
+    scale: 1.4;
+}
 
 #deus{
     position: absolute;
