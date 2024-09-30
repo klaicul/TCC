@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Simula o redirecionamento após 3 segundos
             setTimeout(() => {
-                window.location.href = "pagina-inicial.html";
+                window.location.href = "index.html";
             }, 3000);
         } else {
             alert("Por favor, insira sua senha.");
