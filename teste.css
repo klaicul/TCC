@@ -5,11 +5,16 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Varela Round";
     background-color: #f4f4f4;
     color: #333;
 }
 
+.varela-round-regular {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .container {
     width: 90%;
     max-width: 1200px;
@@ -73,6 +78,7 @@ header h1 {
     color: #002d62;
 }
 
+
 /* Conteúdo das abas */
 .course-content {
     background-color: #fff;
@@ -106,4 +112,23 @@ header h1 {
     .courses-nav ul li {
         margin-bottom: 10px;
     }
+}
+
+
+.escuro{
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.escuro:hover{
+background-color: #4d94e6d3;
+
+}
+
+.tab-link li a{
+    transition: 0.3s;
+}
+
+.tab-link li a:hover{
+    color: #ffffff;
 }
