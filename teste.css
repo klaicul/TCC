@@ -21,16 +21,77 @@ body {
     margin: 0 auto;
 }
 
-/* Cabeçalho */
-header {
-    background-color: #002d62;
-    padding: 20px 0;
+
+
+.header-noticia {
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
-header h1 {
-    color: white;
-    text-align: center;
+
+.blue-section {
+    background-color: #005bbb;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: relative;
+    top: -346px;
+    z-index: 1;
 }
+
+
+.blue-section .topo-asn {
+    color: #fff;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    text-align: center; /* Center text horizontally */
+    flex-grow: 1; /* Allow text to grow and occupy available space */
+}
+
+
+.blue-section .logo {
+    width: 130px; /* Set the logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Adjust this value to lower the image */
+}
+
+
+.yellow-section {
+    background-color: #ffd500;
+    height: 8%;
+    width: 62%;
+    position: absolute;
+top: 164px;
+right: 0;
+clip-path: polygon(100% 0%, 100% 100%, 7% 100%, 0% 0%);
+display: flex;
+align-items: center;
+justify-content: flex-end; /* Alinha o conteúdo à direita */
+padding: 0 1rem;
+z-index: 1;
+}
+.inicio {
+font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+color: #fff; /* Cor do texto */
+text-decoration: none; /* Remove o sublinhado */
+display: flex;
+align-items: center;
+}
+
+
+.inicio i {
+margin-right: 8px; /* Espaço entre o ícone e o texto */
+width: 20px;
+}
+
+
+.inicio:hover {
+color: #003d7a; /* Cor do texto ao passar o mouse */
+}
+
 
 .breadcrumb {
     text-align: center;
