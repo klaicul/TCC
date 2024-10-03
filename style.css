@@ -405,7 +405,7 @@ header .logo {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
+    padding: 75px;
     background-color: #004080;
     color: white;
     border-radius: 5px;
@@ -436,6 +436,14 @@ header .logo {
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    
+}
+
+.btn-matricula:hover{
+    color: #ffffff;
+    background-color: #0254a7;
 }
 
 /* Cards on the right side */
@@ -455,13 +463,18 @@ header .logo {
     font-size: 1.2em;
     font-weight: bold;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
 }
 
-.right-cards i{
+ .card:hover{
+        scale: 1.1;
+    }
+
+.right-cards .card i{
+    
     scale: 2.5;
-    position: relative;
-    right: 60px;
+
 }
 
 /* Responsive behavior */
