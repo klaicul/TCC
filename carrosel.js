@@ -40,3 +40,24 @@ searchInput.addEventListener('input', function() {
         }
     });
 });
+
+/*transição do painel de cursos*/
+
+function changeDescription(title, description) {
+    // Get the elements where the title and description will be updated
+    const dynamicTitle = document.getElementById('dynamic-title');
+    const dynamicDescription = document.getElementById('dynamic-description');
+    
+    // Update the text content with a smooth transition
+    dynamicTitle.style.opacity = 0;
+    dynamicDescription.style.opacity = 0;
+    
+    setTimeout(() => {
+        dynamicTitle.textContent = title;
+        dynamicDescription.textContent = description;
+        dynamicTitle.style.opacity = 1;
+        dynamicDescription.style.opacity = 1;
+    }, 300); // Delay to match the opacity transition
+}
+
+

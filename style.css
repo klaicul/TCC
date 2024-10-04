@@ -465,15 +465,19 @@ header .logo {
     text-align: center;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
+    
 }
 
  .card:hover{
         scale: 1.1;
+        color: #ffffff;
+        background-color: #004080;
     }
 
 .right-cards .card i{
     
     scale: 2.5;
+    margin-bottom: 3px;
 
 }
 
@@ -493,3 +497,9 @@ header .logo {
     }
 }
 
+/*Transições*/
+
+#dynamic-title, #dynamic-description {
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
