@@ -503,3 +503,11 @@ header .logo {
     transition: opacity 0.3s ease;
     opacity: 1;
 }
+
+
+#curso5{
+justify-content: space-around;
+}
+#curso3{
+    justify-content: space-around;
+    }
